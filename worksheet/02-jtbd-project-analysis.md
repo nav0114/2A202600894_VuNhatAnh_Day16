@@ -9,7 +9,7 @@ companion-reference: Strategyn_JTBD_Playbook.pdf (giảng viên gửi kèm)
 
 # Lab 2 — JTBD Project Analysis / Dùng JTBD để soi lại dự án nhóm
 
-**Tên dự án / sản phẩm:** _______________  
+**Tên dự án / sản phẩm:** RiskGuard AI  
 
 > Đây là **file duy nhất** của Lab 2.  
 > File này đồng thời đóng vai trò:
@@ -92,17 +92,17 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 
 ### Khoanh đúng 1 lát cắt theo 4 điểm
 
-- [ ] **1 nhóm người dùng chính**
-- [ ] **1 hoàn cảnh / tình huống rõ**
-- [ ] **1 job cốt lõi**
-- [ ] **1 workflow đủ cụ thể để vẽ ra được**
+- [x] **1 nhóm người dùng chính**
+- [x] **1 hoàn cảnh / tình huống rõ**
+- [x] **1 job cốt lõi**
+- [x] **1 workflow đủ cụ thể để vẽ ra được**
 
 ### Điền nhanh trước khi làm
 
-- **Dự án của nhóm tôi là:** ___________________________________
-- **Lát cắt tôi chọn để phân tích hôm nay là:** ___________________________________
+- **Dự án của nhóm tôi là:** RiskGuard AI
+- **Lát cắt tôi chọn để phân tích hôm nay là:** Giúp Fraud Analyst rà soát và đánh giá các cảnh báo giao dịch (alerts) có rủi ro cao.
 - **Vì sao tôi chọn lát cắt này:**  
-  > ___________________________________
+  > Vì quá trình review cảnh báo tốn nhiều thời gian nhất để thu thập evidence, khiến Analyst dễ bị quá tải trong giờ cao điểm.
 
 ### Viết quá rộng vs viết sắc hơn
 
@@ -121,13 +121,13 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 ### Tóm tắt dự án trong 3 dòng
 
 1. **Nhóm tôi đang nghĩ mình đang giải quyết vấn đề gì?**  
-   > ___________________________________
+   > Giảm thiểu thời gian điều tra và sai sót khi rà soát các cảnh báo gian lận thủ công.
 
 2. **Người dùng chính hiện nhóm đang nhắm tới là ai?**  
-   > ___________________________________
+   > Fraud Analyst / Risk Investigator.
 
 3. **Hiện tại người dùng đó đang giải quyết vấn đề này bằng cách nào?**  
-   > ___________________________________
+   > Mở nhiều tab/dashboard để tra soát lịch sử người dùng, IP, thiết bị, sau đó tổng hợp thủ công để đưa ra quyết định.
 
 ---
 
@@ -139,21 +139,20 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 ### Trả lời 4 câu ngắn
 
 1. **Ai đang gặp vấn đề này?**  
-   > ___________________________________
+   > Các nhân viên phân tích rủi ro (Fraud Analyst) tại các tổ chức tài chính hoặc e-commerce.
 
 2. **Vấn đề xuất hiện trong hoàn cảnh nào?**  
-   > ___________________________________
+   > Khi hệ thống rules engine bắn ra hàng loạt cảnh báo trong giờ cao điểm, buộc họ phải xử lý nhanh nhưng không được sai sót.
 
 3. **Hiện tại họ đang dùng giải pháp thay thế nào?**  
-   > ___________________________________
+   > Dashboard quản trị nội bộ, kết hợp SQL query thủ công và Excel để check log.
 
 4. **Vì sao đây là thời điểm đáng giải?**  
-   > ___________________________________
+   > Gian lận ngày càng tinh vi, rules engine tạo ra quá nhiều False Positive khiến nhân sự bị quá tải. Đặc biệt là "Cost of doing nothing" rất lớn: Nếu Analyst không review kịp, công ty sẽ để lọt Fraud (mất tiền oan) hoặc block nhầm khách hàng xịn (bị phàn nàn và mất user).
 
 ### Tóm tắt market context trong 3-4 dòng
 
-> _______________________________________________  
-> _______________________________________________
+> Các Fraud Analyst đang bị quá tải bởi lượng lớn cảnh báo gian lận trong giờ cao điểm. Việc rà soát thủ công qua nhiều hệ thống tốn kém thời gian và dễ dẫn đến sai lầm. Cần một giải pháp tổng hợp và phân loại rủi ro nhanh chóng để họ ra quyết định chính xác hơn.
 
 ---
 
@@ -174,9 +173,9 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 
 ### Điền
 
-- **Job executor của dự án này là:** ___________________________________
+- **Job executor của dự án này là:** Fraud Analyst (Nhân viên phân tích gian lận).
 - **Vì sao tôi tin đây là người trực tiếp "thuê" giải pháp để làm job:**  
-  > ___________________________________
+  > Vì họ là người trực tiếp click mở case, đọc data, và nhấn nút Approve / Reject cuối cùng trên hệ thống.
 
 ---
 
@@ -200,23 +199,23 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 
 ### 3 tiêu chí tự kiểm
 
-- [ ] Nếu bỏ tool hiện tại đi, job này vẫn còn tồn tại
-- [ ] Trong câu không có tên sản phẩm, AI, chatbot, app, màn hình
-- [ ] Câu đang mô tả **điều user muốn hoàn thành**, không phải thứ product đang làm
+- [x] Nếu bỏ tool hiện tại đi, job này vẫn còn tồn tại
+- [x] Trong câu không có tên sản phẩm, AI, chatbot, app, màn hình
+- [x] Câu đang mô tả **điều user muốn hoàn thành**, không phải thứ product đang làm
 
 ### Bản nháp 1
 
 **Core JTBD bản nháp:**  
-> _______________________________________________
+> Đánh giá mức độ rủi ro bằng AI cho các giao dịch bị cảnh báo.
 
 ### Gạch bỏ từ solution nếu có
 
-- Các từ solution tôi đang lỡ nhét vào câu: _________________________________
+- Các từ solution tôi đang lỡ nhét vào câu: `AI`
 
 ### Bản chốt
 
 **Core JTBD cuối cùng:**  
-> _______________________________________________
+> Đánh giá mức độ rủi ro của một giao dịch đáng ngờ một cách chính xác trong quá trình rà soát hằng ngày.
 
 ---
 
@@ -239,15 +238,15 @@ When [trigger], I want to [motivation], so I can [outcome].
 
 | # | Trigger / When | Motivation / I want to | Outcome / so I can | Điều story này cho thấy |
 |---|---|---|---|---|
-| JS1 | | | | |
-| JS2 | | | | |
-| JS3 | | | | |
+| JS1 | Hàng đợi cảnh báo tăng đột biến, | tôi muốn nhanh chóng nhận diện được đâu là rủi ro thực sự, | tập trung xử lý các case khẩn cấp trước mà không bỏ sót. | Áp lực về mặt thời gian và thứ tự ưu tiên (Triage). |
+| JS2 | Nhìn vào một tài khoản có lịch sử phức tạp, | tôi muốn có đủ ngữ cảnh (context) về các giao dịch trước đó ngay lập tức, | ra quyết định tự tin mà không cần mở 5 tab khác nhau. | Pain point về việc phân mảnh dữ liệu (Locate context). |
+| JS3 | Viết báo cáo giải trình cho một case bị đóng, | tôi muốn có sẵn các luận điểm rõ ràng, | hoàn thành công việc nhanh chóng và tuân thủ quy trình. | Nhu cầu tóm tắt và ghi nhận (Conclude & Document). |
 
 ### Tự kiểm nhanh
 
-- [ ] Mỗi story là một **tình huống thật**, không phải slogan chung chung
-- [ ] 3 story không trùng hệt nhau
-- [ ] Sau khi đọc 3 story, tôi hình dung được lúc nào product của mình đáng xuất hiện
+- [x] Mỗi story là một **tình huống thật**, không phải slogan chung chung
+- [x] 3 story không trùng hệt nhau
+- [x] Sau khi đọc 3 story, tôi hình dung được lúc nào product của mình đáng xuất hiện
 
 ---
 
@@ -268,14 +267,13 @@ Qua JTBD lens, đối thủ không chỉ là app cùng ngành.
 
 | Alternative hiện tại | User đang thuê nó để làm gì? | Nó làm tốt gì? | Nó fail ở đâu? | Switching cost hiện tại cao hay thấp? |
 |---|---|---|---|---|
-| Alt 1 | | | | |
-| Alt 2 | | | | |
-| Alt 3 | | | | |
+| Dashboard truyền thống kết hợp Excel | Tra cứu giao dịch, tổng hợp dữ liệu để so sánh. | Đầy đủ dữ liệu thô, dễ truy vấn bằng SQL. | Rất mất thời gian (10-15p cho 1 case thủ công), dẫn đến backlog ùn ứ nghiêm trọng trong giờ cao điểm. | Cao, vì đây là workflow chuẩn của công ty. |
+| Các Rules Engine tĩnh (Rule-based) | Lọc bớt các rủi ro cơ bản (ví dụ: blacklist IP). | Hoạt động nhanh, có thể auto-block. | Tạo ra quá nhiều False Positive (báo động giả). | Thấp, vì người dùng sẵn sàng có công cụ hỗ trợ tốt hơn. |
 
 ### Kết luận nhanh
 
 **Nếu project của tôi biến mất hôm nay, user nhiều khả năng sẽ quay về:**  
-> _______________________________________________
+> Việc tra cứu thủ công đa nền tảng và viết SQL query để gom thông tin.
 
 ---
 
@@ -310,23 +308,22 @@ Mục tiêu là nhìn ra:
 
 | Step | Trong workflow này user đang cố làm gì? | Hôm nay họ đang dùng gì? | Friction / pain hiện tại | Mức đau |
 |---|---|---|---|---|
-| Define | | | | Low / Med / High |
-| Locate | | | | Low / Med / High |
-| Prepare | | | | Low / Med / High |
-| Confirm | | | | Low / Med / High |
-| Execute | | | | Low / Med / High |
-| Monitor | | | | Low / Med / High |
-| Modify | | | | Low / Med / High |
-| Conclude | | | | Low / Med / High |
+| Define | Nhận biết có cảnh báo rủi ro mới. | Bảng Alert Queue (Dashboard). | Số lượng quá nhiều, khó ưu tiên. | High |
+| Locate | Tìm kiếm dữ liệu liên quan (lịch sử, thiết bị, IP). | Mở nhiều tab/ứng dụng nội bộ. | Phân mảnh data, tốn thao tác tra cứu. | High |
+| Prepare | Tổng hợp và phân tích logic để đánh giá rủi ro. | Nhìn bằng mắt, nhẩm tính, copy-paste. | Dễ bỏ sót dấu hiệu bất thường tinh vi. | High |
+| Confirm | Đối chiếu lại các rule của công ty. | Bộ quy tắc nội bộ. | Phải nhớ hoặc dò tài liệu cứng. | Med |
+| Execute | Quyết định Approve, Reject hoặc Escalate. | Nhấn nút trên hệ thống. | Áp lực ra quyết định sai. | Med |
+| Monitor | N/A | N/A | N/A | Low |
+| Modify | Cập nhật lại quyết định nếu có khiếu nại. | Ticket system. | Quy trình rườm rà. | Med |
+| Conclude | Ghi log và báo cáo lý do. | Gõ thủ công vào textbox ghi chú. | Tốn thời gian lặp đi lặp lại. | High |
 
 ### Chốt 2 bước đau nhất
 
-**Bước đau nhất #1:** _________________________________  
-**Bước đau nhất #2:** _________________________________
+**Bước đau nhất #1:** Locate (Tìm kiếm và gom dữ liệu liên quan)  
+**Bước đau nhất #2:** Prepare (Tổng hợp phân tích logic để nhận định)
 
 **Vì sao đây là nơi đáng chú ý nhất:**  
-> _______________________________________________  
-> _______________________________________________
+> Giai đoạn Locate và Prepare chiếm tới 80% thời gian của một Analyst cho một case. Giải quyết được khâu này sẽ trực tiếp giúp họ tăng năng suất (làm được nhiều case hơn) và giảm mệt mỏi.
 
 ---
 
@@ -345,16 +342,16 @@ Sau khi map workflow, mới hỏi:
 
 | Step | AI nên giúp bằng cách nào? | Vì sao AI hợp ở đây? | Rủi ro chính nếu dùng AI |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
+| Locate | Tổng hợp toàn bộ dữ liệu lịch sử thành một profile ngữ cảnh hiển thị trên cùng một màn hình. | Trích xuất và tóm tắt dữ liệu thô nhanh hơn con người rất nhiều. | Đưa thiếu dữ liệu quan trọng hoặc ảo giác (hallucination). |
+| Prepare | Cung cấp Risk Score dựa trên ML (XGBoost) kèm theo các Risk Factors tự động tóm tắt làm bằng chứng. | Nhận diện pattern rủi ro trong dữ liệu lớn tốt hơn mắt người. | Analyst quá tin vào AI dẫn đến thiên kiến tự động (Automation Bias). |
 
 ### Kết luận nhanh
 
 **AI leverage point quan trọng nhất của dự án tôi là:**  
-> _______________________________________________
+> Đóng vai trò Analyst-Assist: Tổng hợp ngữ cảnh (Locate) và đề xuất bằng chứng rủi ro (Prepare) ngay trên màn hình Case Detail.
 
 **Vì sao không phải ở bước khác:**  
-> _______________________________________________
+> Không thay thế bước Execute (ra quyết định cuối) vì quyết định rủi ro vẫn cần yếu tố con người và tuân thủ các quy định nghiệp vụ nghiêm ngặt.
 
 ---
 
@@ -373,13 +370,15 @@ vì [giá trị rõ nhất].
 
 ### Bản hypothesis của tôi
 
-> _______________________________________________  
-> _______________________________________________
+> Nếu chúng ta giúp Fraud Analyst thu thập và phân tích dữ liệu tốt hơn ở bước Locate và Prepare,  
+> bằng cách hiển thị điểm rủi ro tổng hợp kèm theo bằng chứng AI phân tích sẵn trên một màn hình duy nhất,  
+> thì họ sẽ chuyển từ việc check thủ công qua nhiều hệ thống nội bộ sang việc sử dụng Dashboard RiskGuard AI,  
+> vì nó giảm thiểu thời gian tra cứu và tăng độ tự tin khi ra quyết định.
 
 ### Tín hiệu sớm nếu hypothesis này đúng
 
-1. _______________________________________________
-2. _______________________________________________
+1. Thời gian xử lý trung bình mỗi case (Average Handle Time) giảm xuống đáng kể.
+2. Tỉ lệ False Positive được Analyst nhận diện và xử lý chính xác cao hơn.
 
 ---
 
@@ -399,15 +398,12 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 
 | Assumption | Vì sao assumption này rủi ro? | Tôi đang có bằng chứng gì? | Cần validate bằng cách nào tiếp theo? |
 |---|---|---|---|
-| A1 | | | |
-| A2 | | | |
-| A3 | | | |
-| A4 | | | |
-| A5 | | | |
+| Analyst sẽ tin tưởng AI Score. | Nếu họ không tin, họ vẫn sẽ tự check thủ công lại từ đầu, làm vô nghĩa giá trị của AI. | Chưa có, đây mới là phỏng đoán. | Thử nghiệm hiển thị Explainable AI (Giải thích lý do) và phỏng vấn xem họ có tin không. |
+| Việc tổng hợp trên một màn hình (Single pane of glass) đủ cho họ ra quyết định. | Có thể nghiệp vụ của họ bắt buộc phải check chéo hệ thống ngoài mà ta không có API. | Phỏng vấn ban đầu thấy họ ghét mở nhiều tab. | Theo dõi hành vi sử dụng bằng heatmap/logging để xem họ có vẫn mở tab khác không. |
 
 ### Assumption nguy hiểm nhất nếu tôi đang sai
 
-> _______________________________________________
+> Analyst không tin tưởng kết quả của AI và bị ảnh hưởng bởi Automation Bias, hoặc ngược lại, hoàn toàn phớt lờ AI vì sợ sai nghiệp vụ.
 
 ---
 
@@ -431,9 +427,8 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 
 | Ý phản biện tôi nghe được | Nó chạm vào phần nào? | Tôi sẽ giữ / sửa gì? |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| AI có thực sự giải thích được lý do (Risk factors) tốt không? | AI Leverage & Trust | Nhấn mạnh việc xuất log và explainable rule thay vì blackbox. |
+| Analyst bị phạt nếu sai, họ sẽ check lại hết. | Assumption về Trust | Giao diện phải cực kỳ minh bạch nguồn data. |
 
 ---
 
@@ -441,52 +436,51 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 
 ### Sau khi nghe phản biện, tôi thay đổi gì?
 
-- [ ] Giữ nguyên `job executor`
+- [x] Giữ nguyên `job executor`
 - [ ] Sửa `job executor`
-- [ ] Giữ nguyên `core JTBD`
+- [x] Giữ nguyên `core JTBD`
 - [ ] Sửa `core JTBD`
-- [ ] Giữ nguyên `AI leverage point`
+- [x] Giữ nguyên `AI leverage point`
 - [ ] Sửa `AI leverage point`
-- [ ] Giữ nguyên `product hypothesis`
+- [x] Giữ nguyên `product hypothesis`
 - [ ] Sửa `product hypothesis`
 
 ### Vì sao tôi giữ / sửa?
 
-> _______________________________________________  
-> _______________________________________________
+> Tôi giữ nguyên các ý chính nhưng sẽ note lại cực kỳ kĩ về vấn đề Explainability (Khả năng giải thích của AI). Trust là thứ quyết định sống còn của dự án này.
 
 ### Version cuối cùng tôi nộp
 
 **Job executor:**  
-> _______________________________________________
+> Fraud Analyst / Risk Investigator.
 
 **Core JTBD:**  
-> _______________________________________________
+> Đánh giá mức độ rủi ro của một giao dịch đáng ngờ một cách chính xác trong quá trình rà soát hằng ngày.
 
 **2 bước đau nhất trong workflow:**  
-> _______________________________________________
+> Locate (gom nhặt dữ liệu phân mảnh) và Prepare (tổng hợp phân tích).
 
 **AI leverage point chính:**  
-> _______________________________________________
+> Hỗ trợ tổng hợp ngữ cảnh giao dịch và xuất ra điểm số rủi ro đi kèm với bằng chứng minh bạch ngay trên một màn hình review.
 
 **Product hypothesis:**  
-> _______________________________________________
+> Nếu giúp Analyst rút ngắn khâu Locate & Prepare bằng AI tổng hợp + Risk Score, họ sẽ bỏ qua việc tra soát thủ công vì tốc độ và độ tự tin tăng cao.
 
 **Assumption cần validate đầu tiên:**  
-> _______________________________________________
+> Khả năng giải thích của AI (Explainability) có đủ sức thuyết phục Analyst tin tưởng kết quả và ra quyết định hay không.
 
 ---
 
 ## Checklist trước khi nộp
 
-- [ ] Tôi đã khoanh đúng 1 lát cắt cụ thể của dự án.
-- [ ] Tôi đã phân biệt được `job executor` với buyer / influencer.
-- [ ] `Core JTBD` của tôi không nhét solution vào câu.
-- [ ] Tôi đã viết đủ 3 `job stories`.
-- [ ] Tôi đã điền `JTBD lite map` và khoanh ra 2 bước đau nhất.
-- [ ] Tôi đã chỉ ra `AI leverage point` thay vì nhảy thẳng vào feature list.
-- [ ] Tôi đã ghi rõ `assumptions to validate`.
-- [ ] Tôi đã sửa version cuối sau khi share trong bàn.
+- [x] Tôi đã khoanh đúng 1 lát cắt cụ thể của dự án.
+- [x] Tôi đã phân biệt được `job executor` với buyer / influencer.
+- [x] `Core JTBD` của tôi không nhét solution vào câu.
+- [x] Tôi đã viết đủ 3 `job stories`.
+- [x] Tôi đã điền `JTBD lite map` và khoanh ra 2 bước đau nhất.
+- [x] Tôi đã chỉ ra `AI leverage point` thay vì nhảy thẳng vào feature list.
+- [x] Tôi đã ghi rõ `assumptions to validate`.
+- [x] Tôi đã sửa version cuối sau khi share trong bàn.
 
 ---
 
@@ -496,3 +490,9 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 - So sánh `current alternatives` với project của nhóm theo 3 tiêu chí: nhanh hơn, rẻ hơn, tin hơn.
 - Tự hỏi lại một câu khó: **nếu không dùng AI, project này còn tạo giá trị không?**
 - Nếu câu trả lời là "không", hãy xem lại liệu nhóm đang giải **job thật** hay chỉ đang tìm chỗ để nhét AI.
+
+### Bonus 2: Tư duy Data-driven & Validation
+**Validation thực tế (Quick Interview với Senior Fraud Analyst):**
+> *"Đau nhất không phải là lúc ra quyết định, mà là đi gom đủ data để dám ra cái quyết định đó. Có những case tôi phải mở tới 5 ứng dụng khác nhau: màn hình lịch sử giao dịch, IP/thiết bị, lịch sử ticket CSKH... Mất đến 15 phút chỉ để hiểu chuyện gì đang xảy ra. Nếu các bạn gom hết thành một màn hình tóm tắt duy nhất thì tuyệt vời."*
+> 
+> **->** Lời trích dẫn này đã trực tiếp **validate Job Story 2 (Locate context)** và chứng minh định lượng **mức độ đau đớn thực sự của khâu Locate** trong workflow. Nó củng cố cho việc RiskGuard AI đang nhắm đúng "tử huyệt" của công việc này.
